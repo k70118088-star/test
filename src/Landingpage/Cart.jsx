@@ -13,7 +13,6 @@ const Cart = () => {
       quantity: item.quantity || 1 || 2,
       price: Number(item.price), 
     }));
-
     setCartItems(updated);
   }, []);
 
@@ -84,9 +83,7 @@ const Cart = () => {
                 onClick={() => updateQuantity(index, "decrease")} className="w-10 h-10 bg-gray-700 text-white text-lg">
                 -
               </button>
-
               <span className="px-4">{item.quantity}</span>
-
               <button
                 onClick={() => updateQuantity(index, "increase")}className="w-10 h-10 bg-[#01C6B5] text-white text-lg">
                 +
@@ -103,18 +100,15 @@ const Cart = () => {
           </div>
         );
       })}
-
       <div className="flex justify-end mt-10">
         <div className="w-full max-w-sm">
           <div className="flex justify-between font-medium mb-2">
             <span>Estimated Total</span>
             <span>€{getTotalPrice().toFixed(2)}</span>
           </div>
-
           <p className="text-sm text-gray-500 mb-6">
             Taxes, discounts and shipping calculated at checkout.
           </p>
-
           <button className="w-full bg-[#01C6B5] text-white py-4 text-lg font-medium">
             Checkout
           </button>
@@ -123,5 +117,4 @@ const Cart = () => {
     </div>
   );
 };
-
 export default Cart;
