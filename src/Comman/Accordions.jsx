@@ -10,19 +10,23 @@ const Accordions = () => {
   const data = [
     {
       title: "Our commitment to payment security",
-      content:"All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.",
+      content:
+        "All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.",
     },
     {
       title: "Our policy for returns and refunds",
-      content:"We offer easy returns within 30 days of purchase. Refunds are processed within 5-7 business days.",
+      content:
+        "We offer easy returns within 30 days of purchase. Refunds are processed within 5-7 business days.",
     },
     {
       title: "Product delivery times",
-      content:"Orders are processed within 1-2 business days and delivered within 3-5 working days.",
+      content:
+        "Orders are processed within 1-2 business days and delivered within 3-5 working days.",
     },
     {
       title: "Our warranty policy",
-      content:"All products come with a 1-year warranty covering manufacturing defects.",
+      content:
+        "All products come with a 1-year warranty covering manufacturing defects.",
     },
   ];
 
@@ -34,8 +38,11 @@ const Accordions = () => {
         return (
           <div
             key={index}
-            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 borderpx-4 sm:px-6 py-4 flex flex-col justify-center
-            ${isOpen ? "lg:h-33.5 border-[#01C6B5] shadow-[0_0_8.4px_#0000001A]" : "lg:h-19 border-[#41414366]"}`}
+            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 border-2 sm:px-6 py-4 flex flex-col justify-center
+              ${isOpen
+                ? "lg:h-33.5 border-[#01C6B5] shadow-[0_0_8.4px_#0000001A]"
+                : "lg:h-19 border-[#41414366]"
+              }`}
           >
             <div
               className="flex justify-between items-center cursor-pointer"
@@ -46,7 +53,7 @@ const Accordions = () => {
               </h3>
 
               <svg
-                className={`w-5 h-5 transition-transform duration-300 ${ isOpen ? "rotate-180" : ""}`}
+                className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
