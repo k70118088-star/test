@@ -38,7 +38,7 @@ const Accordions = () => {
         return (
           <div
             key={index}
-            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 border-2 sm:px-6 py-4 flex flex-col justify-center
+            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 border-2 sm:px-6 py-4 flex flex-col 
               ${isOpen
                 ? "lg:h-33.5 border-[#01C6B5] shadow-[0_0_8.4px_#0000001A]"
                 : "lg:h-19 border-[#41414366]"
@@ -46,8 +46,7 @@ const Accordions = () => {
           >
             <div
               className="flex justify-between items-center cursor-pointer"
-              onClick={() => toggleItem(index)}
-            >
+              onClick={() => toggleItem(index)}>
               <h3 className="font-medium text-base sm:text-lg lg:text-xl leading-[169%]">
                 {item.title}
               </h3>
@@ -68,7 +67,7 @@ const Accordions = () => {
             </div>
 
             {isOpen && (
-              <p className="mt-3 font-normal text-sm sm:text-base leading-[160%] text-[#414143] lg:max-w-194.75">
+              <p className="mt-3 font-normal flex items-start justify-start text-sm sm:text-base leading-[160%] text-[#414143] lg:max-w-194.75">
                 {item.content}
               </p>
             )}
