@@ -14,7 +14,7 @@ const Navbar = () => {
           </h1>
 
           <div className="hidden md:flex gap-8 text-white">
-            <p className="cursor-pointer hover:opacity-80">Home</p>
+            <p className="cursor-pointer hover:opacity-80"><Link to={"/"}>Home</Link></p>
             <p className="cursor-pointer hover:opacity-80">Contact</p>
             <p className="cursor-pointer hover:opacity-80"><Link to={"/cart"}>Cart</Link></p>
           </div>
