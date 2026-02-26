@@ -43,30 +43,30 @@ const Slider = () => {
   }, [slides.length]);
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full h-[80vh]">
       <div className="relative w-full">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`bg-cover bg-center px-6 sm:px-10 md:px-20 lg:px-35 absolute w-full min-h-screen transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0"}`}
+            className={`bg-cover bg-center px-6 sm:px-10 md:px-20 lg:px-35 absolute w-full min-h-[80vh] transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0"}`}
             style={{ backgroundImage: `url('${slide.image}')` }}>
             <div
               className="absolute inset-0 z-0"
               style={{background:"linear-gradient(90.64deg, rgba(0,0,0,0.65) 5.47%, rgba(0,0,0,0) 95.31%)"}}/>
 
-            <div className="relative z-20 text-white min-h-screen flex flex-col items-start justify-center px-4">
+            <div className="relative z-20 text-white min-h-[80vh] max-w-149.5 flex flex-col items-start justify-center px-4">
               <h1
-                className="tracking-[18%] text-sm sm:text-base md:text-xl font-normal">
+                className="text-sm sm:text-base md:text-2xl leading-[100%] tracking-[18%] font-normal">
                 {slide.subtitle}
               </h1>
 
               <h1
-                className="font-bold tracking-[-5%] text-3xl sm:text-4xl md:text-5xl lg:text-[62px]">
+                className="font-bold leading-[100%] mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-[62px]">
                 {slide.title}
               </h1>
 
               <h1
-                className="font-normal text-base sm:text-lg md:text-[20px] max-w-xl md:max-w-2xl mt-2">
+                className="font-normal text-base mt-4 leading-[160%] sm:text-lg md:text-[20px]">
                 {slide.description}
               </h1>
 

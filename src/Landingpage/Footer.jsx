@@ -42,10 +42,6 @@ const Footer = () => {
             <p className="text-[#FAFAFA] text-base">Leggings</p>
             <p className="text-[#FAFAFA] text-base">Women’s Clothing</p>
             <p className="text-[#FAFAFA] text-base">Men’s Clothing</p>
-            <p className="text-[#FAFAFA] text-base">Yoga & Pilates Equipment</p>
-            <p className="text-[#FAFAFA] text-base">Jewelry & Wellness</p>
-            <p className="text-[#FAFAFA] text-base">Accessories</p>
-            <p className="text-[#FAFAFA] text-base">Size Guide</p>
           </div>
 
           <div className="flex flex-col gap-5">

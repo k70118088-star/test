@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Headbar from "./Headbar";
+import Navbar from "./Navbar";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -42,6 +44,9 @@ const Cart = () => {
   };
 
   return (
+    <>
+    <Headbar />
+    <Navbar />
     <div className="max-w-275 mx-auto px-4 py-12">
       
       <div className="flex justify-between items-center mb-8">
@@ -115,6 +120,7 @@ const Cart = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 export default Cart;
