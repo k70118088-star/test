@@ -43,53 +43,41 @@ const Products = () => {
             Use this area to describe the collection.
           </p>
         </div>
-
         <div className="flex items-center gap-3">
           <button
             onClick={prevSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
-          >
+            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition">
             <svg
               width="9"
               height="15"
               viewBox="0 0 9 15"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8.486 12.728L7.072 14.142L0 7.072L7.072 0L8.486 1.414L2.829 7.071L8.486 12.728Z"
-                fill="currentColor"
-              />
+                fill="currentColor"/>
             </svg>
           </button>
           <button
             onClick={nextSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
-          >
+            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5] hover:text-white transition">
             <svg
               width="9"
               height="15"
               viewBox="0 0 9 15"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0.000328064 1.41409L1.41433 9.05991e-05L8.48633 7.07009L1.41433 14.1421L0.000328064 12.7281L5.65733 7.07109L0.000328064 1.41409Z"
-                fill="currentColor"
-              />
+                fill="currentColor"/>
             </svg>
           </button>
         </div>
       </div>
 
       <div className="relative max-w-285 overflow-hidden">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${startIndex * (100 / visibleCards)}%)`,
-          }}
-        >
+        <div className="flex transition-transform duration-500 ease-in-out"
+          style={{transform: `translateX(-${startIndex * (100 / visibleCards)}%)`}}>
           {Product.map((Product, index) => (
             <div
               key={index}
@@ -97,8 +85,7 @@ const Products = () => {
               <ProductCard
                 prize={Product.prize}
                 image={Product.image}
-                text={Product.text}
-              />
+                text={Product.text}/>
             </div>
           ))}
         </div>
