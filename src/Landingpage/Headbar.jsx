@@ -1,5 +1,6 @@
 import React from "react";
 import { Cart, Contact, Free, Search } from "../../icons";
+import { Link } from "react-router-dom";
 
 const Headbar = () => {
   return (
@@ -15,7 +16,7 @@ const Headbar = () => {
         <div className="flex items-center gap-4">
           <Search />
           <Contact />
-          <Cart />
+         <Link to={"/cart"}> <Cart /></Link>
         </div>
 
       </nav>

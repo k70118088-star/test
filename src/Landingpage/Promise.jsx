@@ -4,7 +4,7 @@ const Promise = () => {
   return (
     <div>
       <div className="max-w-285 mx-auto px-4 sm:px-6 lg:px-4">
-        <div className="flex flex-col mt-16 md:mt-32.5 justify-center items-center">
+        <div className="flex flex-col mt-16 md:mt-35 justify-center items-center">
           <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl text-black leading-[100%] text-center">
             Our Service Promise
           </h1>
@@ -34,7 +34,7 @@ const Promise = () => {
               </p>
             </div>
             <svg
-            className="hidden lg:block"
+            className="hidden mt-3.5 lg:block"
               width="200"
               height="29"
               viewBox="0 0 245 29"
@@ -72,7 +72,7 @@ const Promise = () => {
               </p>
             </div>
             <svg
-              className="mt-20 hidden lg:block"
+              className="mt-12 hidden lg:block"
               width="230"
               height="33"
               viewBox="0 0 274 33"

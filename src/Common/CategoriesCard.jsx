@@ -11,7 +11,7 @@ const CategoriesCard = ({ image, title, price }) => {
   };
 
   return (
-    <div className="w-66.75 h-75.75 bg-white shadow-[0_0_51px_rgba(0,0,0,0.08)]">
+    <div className="w-66.75 h-75.75 cursor-pointer bg-white shadow-[0_0_51px_rgba(0,0,0,0.08)]">
       <div className="relative group bg-[#EFEFEF] h-62.75 flex items-center justify-center overflow-hidden">
         <div className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center z-20 cursor-pointer">
           <svg
@@ -35,8 +35,8 @@ const CategoriesCard = ({ image, title, price }) => {
       </div>
 
       <div className="flex justify-between items-center px-4 py-4">
-        <h2 className="text-sm font-medium text-gray-700">{title}</h2>
-        <p className="text-sm font-medium text-gray-700">{price}</p>
+        <h2 className="text-sm font-semibold text-[#414143]">{title}</h2>
+        <p className="text-sm font-normal text-black">{price}</p>
       </div>
     </div>
   );

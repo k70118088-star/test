@@ -21,9 +21,9 @@ const ProductCard = ({ prize, text, image }) => {
   };
 
   return (
-    <div className="w-full max-w-90 lg:w-90 lg:h-123.75 mt-12.5 mx-auto">
+    <div className="w-full max-w-91 lg:w-90 lg:h-110.25 mt-12.5 mx-auto">
       
-      <div className="relative group bg-[#F5F5F5] p-4 sm:p-6 overflow-hidden">
+      <div className="relative group bg-[#F5F5F5] p-4 sm:p-6 cursor-pointer overflow-hidden">
         
         <div className="flex justify-between items-center relative z-10">
           <h1 className="py-2 px-4 sm:px-5 bg-white rounded-full font-medium text-sm sm:text-base">
@@ -68,7 +68,7 @@ const ProductCard = ({ prize, text, image }) => {
       </div>
 
       <div className="mt-6">
-        <h2 className="text-center text-lg sm:text-xl font-normal">
+        <h2 className="text-center text-lg sm:text-2xl font-normal">
           {text}
         </h2>
       </div>

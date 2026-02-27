@@ -71,7 +71,7 @@ const Slider = () => {
               </h1>
 
               <button
-                className="bg-[#01C6B5] w-32 sm:w-36 h-12 sm:h-14.25 text-base sm:text-[20px] font-medium mt-6">
+                className="bg-[#01C6B5] cursor-pointer w-32 sm:w-36 h-12 sm:h-14.25 text-base sm:text-[20px] font-medium mt-6">
                 Shop now
               </button>
             </div>

@@ -1,21 +1,21 @@
 import React from "react";
-import ProductCard from "../Comman/ProductCard";
+import ProductCard from "../Common/ProductCard";
 
 const Products = () => {
   return (
     <div className="max-w-285 mx-auto px-4 ">
-      <div className="w-full flex flex-col md:flex-row justify-between md:items-center mt-16 md:mt-32 gap-6">
+      <div className="w-full flex flex-col md:flex-row justify-between md:items-center mt-16 md:mt-32.5 gap-6">
         <div>
           <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl text-black leading-[100%]">
             Featured Products
           </h1>
-          <p className="mt-2 text-sm sm:text-base">
+          <p className="mt-2 text-sm sm:text-base font-normal text-[#414143]">
             Use this area to describe the collection.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="w-10 h-10 justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
+          <button className="w-10 h-10 cursor-pointer justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
             <svg
               width="9"
               height="15"
@@ -29,7 +29,7 @@ const Products = () => {
               />
             </svg>
           </button>
-          <button className="w-10 h-10 justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
+          <button className="w-10 h-10 cursor-pointer justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
             <svg
               width="9"
               height="15"

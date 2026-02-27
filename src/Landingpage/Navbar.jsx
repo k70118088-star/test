@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="max-w-310 mx-auto px-4 flex justify-between items-center">
           
           <h1 className="text-white text-lg font-semibold">
-            Logo
+           <Link to={"/"}>Logo</Link> 
           </h1>
 
           <div className="hidden md:flex gap-8 text-white">

@@ -1,5 +1,5 @@
 import React from "react";
-import CategoriesCard from "../Comman/CategoriesCard";
+import CategoriesCard from "../Common/CategoriesCard";
 
 const Categories = () => {
   const categoriesData = [
@@ -91,15 +91,13 @@ const Categories = () => {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <button
-              className="font-medium text-base md:text-lg text-white py-3 md:py-4 px-6 bg-[#01C6B5] whitespace-nowrap">
+            <button className="font-medium text-base md:text-lg text-white py-3 md:py-4 px-6 bg-[#01C6B5] whitespace-nowrap">
               View All
             </button>
           </div>
         </div>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 md:mt-12 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 md:mt-12 justify-items-center">
           {categoriesData.map((item) => (
             <div className="w-full max-w-xs" key={item.id}>
               <CategoriesCard

@@ -17,7 +17,7 @@ const BlogCard = ({ image }) => {
           May 25, 2025
         </p>
 
-        <h1 className="mt-3 font-semibold text-lg sm:text-xl leading-[100%]">
+        <h1 className="mt-3.25 font-semibold text-lg sm:text-xl leading-[100%]">
           Our Origins in Movement
         </h1>
 
@@ -28,7 +28,7 @@ const BlogCard = ({ image }) => {
 
         <a
           href="#"
-          className="mt-3 font-medium text-sm sm:text-base leading-[160%] text-[#01C6B5] flex items-center gap-3"
+          className="mt-2.25 font-medium text-sm sm:text-base leading-[160%] text-[#01C6B5] flex items-center gap-3"
         >
           Read More
           <span>

@@ -16,16 +16,19 @@ const Footer = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4">
-            {[FaYoutube, FaFacebookF, FaXTwitter, FaLinkedinIn].map(
-              (Icon, index) => (
-                <div
-                  key={index}
-                  className="w-9 h-9 border border-white text-white rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition"
-                >
-                  <Icon size={17} />
+            
+                <div className="w-9 h-9 border border-white text-white rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition">
+                  <FaYoutube size={17} />
                 </div>
-              ),
-            )}
+                 <div className="w-9 h-9 border border-white text-white rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition">
+                  <FaFacebookF size={17} />
+                </div>
+                 <div className="w-9 h-9 border border-white text-white rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition">
+                  <FaXTwitter size={17} />
+                </div>
+                 <div className="w-9 h-9 border border-white text-white rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition">
+                  <FaLinkedinIn size={17} />
+                </div>
           </div>
         </div>
 

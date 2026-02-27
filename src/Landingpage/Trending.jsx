@@ -1,5 +1,5 @@
 import React from "react";
-import TrendingCard from "../Comman/TrendingCard";
+import TrendingCard from "../Common/TrendingCard";
 
 const Trending = () => {
   return (
@@ -16,7 +16,7 @@ const Trending = () => {
           </div>
 
           <div className="flex justify-center md:justify-end items-center gap-3">
-            <button className="w-10 h-10 justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
+            <button className="w-10 h-10 cursor-pointer justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
               <svg
                 width="9"
                 height="15"
@@ -30,7 +30,7 @@ const Trending = () => {
                 />
               </svg>
             </button>
-            <button className="w-10 h-10 justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
+            <button className="w-10 h-10 cursor-pointer justify-center flex items-center sm:w-12.5 sm:h-12.5 text-xl sm:text-2xl rounded-full bg-white border border-[#414143] text-[#414143] hover:bg-[#01C6B5] hover:text-white hover:border-none transition">
               <svg
                 width="9"
                 height="15"

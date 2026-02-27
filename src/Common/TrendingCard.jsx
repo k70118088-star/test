@@ -3,7 +3,7 @@ import React from "react";
 const TrendingCard = ({ image, title, price }) => {
   return (
     <div className="w-full max-w-91 bg-white border border-black/5 p-4 hover:shadow-[0px_0px_51.3px_0px_#00000014]">
-      <div className="relative bg-gray-200 w-full aspect-6/5 flex items-center justify-center overflow-hidden">
+      <div className="relative bg-gray-200 w-full max-w-83 h-68.75 flex items-center justify-center overflow-hidden">
         <div className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center cursor-pointer">
           <svg
             width="18"
@@ -22,14 +22,14 @@ const TrendingCard = ({ image, title, price }) => {
         <img src={image} alt={title} className="w-full h-full object-cover " />
       </div>
 
-      <div className="mt-6">
+      <div className="mt-5">
         <h2 className="text-lg sm:text-xl font-semibold">{title}</h2>
 
-        <p className="text-gray-500 mt-2 text-sm leading-relaxed">
+        <p className="text-gray-500 mt-2 max-w-83 text-sm leading-relaxed">
           Sculpting, slimming, supportive, stretchy, stylish, seamless
         </p>
 
-        <div className="flex justify-between items-center mt-6">
+        <div className="flex justify-between items-center mt-2.5">
           <p className="text-xl sm:text-2xl font-bold">{price}</p>
 
           <div className="flex gap-1 text-xl sm:text-2xl text-yellow-500">
@@ -38,10 +38,10 @@ const TrendingCard = ({ image, title, price }) => {
         </div>
 
         <button
-          className="w-full border mt-5 border-black/70 text-black/70 bg-white py-3 font-medium text-base sm:text-lg 
+          className="w-full border mt-2.5 border-black/70 text-black/70 bg-white py-3 font-medium text-base sm:text-lg 
                            hover:bg-[#01C6B5] hover:text-white hover:border-none"
         >
-          Shop now
+          Shop Now
         </button>
       </div>
     </div>
