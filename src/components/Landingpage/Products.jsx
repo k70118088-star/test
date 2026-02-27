@@ -93,8 +93,7 @@ const Products = () => {
           {Product.map((Product, index) => (
             <div
               key={index}
-              className="w-full sm:w-1/2 xl:w-1/3 flex-shrink-0 px-3"
-            >
+              className="w-full sm:w-1/2 xl:w-1/3 flex-shrink-0 px-3">
               <ProductCard
                 prize={Product.prize}
                 image={Product.image}

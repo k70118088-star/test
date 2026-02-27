@@ -23,13 +23,13 @@ const Newsletter = () => {
               tips right in your mailbox.
             </p>
 
-            <div className="mt-8 flex  items-center border border-[#E5E5E5]  max-w-105 mx-auto">
+            <div className="mt-8 flex   items-center border border-[#E5E5E5]  max-w-105 mx-auto">
               <input
                 type="email"
                 placeholder="Email Address"
                 className="flex-1 sm:px-4 px-1 py-3 outline-none text-sm"
               />
-              <button className="bg-[#00C4B4] text-white px-4 sm:px-8 py-3 text-sm font-medium">
+              <button className="bg-[#00C4B4] text-white px-4 sm:px-7.75 py-2.75 text-sm font-medium">
                 Subscribe
               </button>
             </div>
@@ -39,8 +39,7 @@ const Newsletter = () => {
             <img
               src="/assets/img15.png"
               alt="bottle"
-              className="h-95 object-contain"
-            />
+              className="h-95 object-contain"/>
           </div>
         </div>
       </div>
