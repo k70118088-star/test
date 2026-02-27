@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./Landingpage/Navbar";
-import Headbar from "./Landingpage/Headbar";
-import Footer from "./Landingpage/Footer";
-import Slider from "./Landingpage/Slider";
-import Products from "./Landingpage/Products";
-import Categories from "./Landingpage/Categories";
-import Trending from "./Landingpage/Trending";
-import Promise from "./Landingpage/Promise";
-import Blog from "./Landingpage/Blog";
-import Questions from "./Landingpage/Questions";
-import Newsletter from "./Landingpage/Newsletter";
+import Navbar from "./components/Landingpage/Navbar";
+import Headbar from "./components/Landingpage/Headbar";
+import Footer from "./components/Landingpage/Footer";
+import Slider from "./components/Landingpage/Slider";
+import Products from "./components/Landingpage/Products";
+import Categories from "./components/Landingpage/Categories";
+import Trending from "./components/Landingpage/Trending";
+import Promise from "./components/Landingpage/Promise";
+import Blog from "./components/Landingpage/Blog";
+import Questions from "./components/Landingpage/Questions";
+import Newsletter from "./components/Landingpage/Newsletter";
 
 const Home = () => {
   return (

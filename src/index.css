@@ -1,14 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  .gradient-border-top {
-    border-top: 1px solid;
-    border-image-source: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.5) 55.77%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    border-image-slice: 1;
+  /* Colors */
+  --teal: #01c6b5;
+  --gray: #414143;
+
+  /* Font Sizes */
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-48: 48px;
+  --text-66: 66px;
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+@layer utilities {
+  /* Font Sizes */
+  .text-16 {
+    font-size: var(--text-16);
   }
+  .text-18 {
+    font-size: var(--text-18);
+  }
+  .text-20 {
+    font-size: var(--text-20);
+  }
+  .text-24 {
+    font-size: var(--text-24);
+  }
+  .text-48 {
+    font-size: var(--text-48);
+  }
+  .text-66 {
+    font-size: var(--text-66);
+  }
+
+  /* Font Weights */
+  .font-normal {
+    font-weight: var(--font-normal);
+  }
+  .font-medium {
+    font-weight: var(--font-medium);
+  }
+  .font-semibold {
+    font-weight: var(--font-semibold);
+  }
+  .font-bold {
+    font-weight: var(--font-bold);
+  }
+
+  /* Colors */
+  .text-gray-custom {
+    color: var(--gray);
+  }
+  .text-teal-custom {
+    color: var(--teal);
+  }
+  .bg-teal-custom {
+    background-color: var(--teal);
+  }
+}
+
+.gradient-border-top {
+  border-top: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 55.77%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 1;
 }

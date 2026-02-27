@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-[#01C6B5] py-4">
+      <div className="bg-teal-custom  py-4">
         <div className="max-w-310 mx-auto px-4 flex justify-between items-center">
           
           <h1 className="text-white text-lg font-semibold">

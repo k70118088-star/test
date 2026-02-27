@@ -25,7 +25,7 @@ const TrendingCard = ({ image, title, price }) => {
       <div className="mt-5">
         <h2 className="text-lg sm:text-xl font-semibold">{title}</h2>
 
-        <p className="text-gray-500 mt-2 max-w-83 text-sm leading-relaxed">
+        <p className="text-gray-500 mt-2 max-w-83 text-base leading-relaxed">
           Sculpting, slimming, supportive, stretchy, stylish, seamless
         </p>
 
@@ -38,9 +38,7 @@ const TrendingCard = ({ image, title, price }) => {
         </div>
 
         <button
-          className="w-full border mt-2.5 border-black/70 text-black/70 bg-white py-3 font-medium text-base sm:text-lg 
-                           hover:bg-[#01C6B5] hover:text-white hover:border-none"
-        >
+          className="w-full border cursor-pointe mt-2.5 border-black/70 text-black/70 bg-white py-3 font-medium text-base sm:text-lg hover:bg-[#01C6B5] hover:text-white hover:border-none">
           Shop Now
         </button>
       </div>

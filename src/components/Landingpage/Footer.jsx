@@ -42,23 +42,23 @@ const Footer = () => {
           <div className="flex flex-col gap-5">
             <h1 className="text-[#FAFAFA] font-medium text-xl">Quick Links</h1>
 
-            <p className="text-[#FAFAFA] text-base">Leggings</p>
-            <p className="text-[#FAFAFA] text-base">Women’s Clothing</p>
-            <p className="text-[#FAFAFA] text-base">Men’s Clothing</p>
+            <p className="text-[#FAFAFA] text-16">Leggings</p>
+            <p className="text-[#FAFAFA] text-16">Women’s Clothing</p>
+            <p className="text-[#FAFAFA] text-16">Men’s Clothing</p>
           </div>
 
           <div className="flex flex-col gap-5">
             <h1 className="text-[#FAFAFA] font-medium text-xl">Other links</h1>
 
-            <p className="text-[#FAFAFA] text-base">Privacy Policy</p>
-            <p className="text-[#FAFAFA] text-base">Terms of Service</p>
-            <p className="text-[#FAFAFA] text-base">Terms of Service</p>
+            <p className="text-[#FAFAFA] text-16">Privacy Policy</p>
+            <p className="text-[#FAFAFA] text-16">Terms of Service</p>
+            <p className="text-[#FAFAFA] text-16">Terms of Service</p>
           </div>
         </div>
       </div>
 
       <div className="py-5 w-full text-center  gradient-border-top">
-        <h1 className="text-[#FAFAFA] text-base">
+        <h1 className="text-[#FAFAFA] text-16">
           Copyright © 2025 Yogalis. All Rights Reserved
         </h1>
       </div>

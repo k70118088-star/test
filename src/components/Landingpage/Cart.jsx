@@ -90,7 +90,7 @@ const Cart = () => {
               </button>
               <span className="px-4">{item.quantity}</span>
               <button
-                onClick={() => updateQuantity(index, "increase")}className="w-10 h-10 bg-[#01C6B5] text-white text-lg">
+                onClick={() => updateQuantity(index, "increase")}className="w-10 h-10 bg-teal-custom  text-white text-lg">
                 +
               </button>
 
@@ -114,7 +114,7 @@ const Cart = () => {
           <p className="text-sm text-gray-500 mb-6">
             Taxes, discounts and shipping calculated at checkout.
           </p>
-          <button className="w-full bg-[#01C6B5] text-white py-4 text-lg font-medium">
+          <button className="w-full bg-teal-custom  text-white py-4 text-lg font-medium">
             Checkout
           </button>
         </div>

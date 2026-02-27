@@ -21,12 +21,12 @@ const ProductCard = ({ prize, text, image }) => {
   };
 
   return (
-    <div className="w-full max-w-91 lg:w-90 lg:h-110.25 mt-12.5 mx-auto">
+    <div className="w-full max-w-91 lg:w-90  mt-12.5 mx-auto">
       
       <div className="relative group bg-[#F5F5F5] p-4 sm:p-6 cursor-pointer overflow-hidden">
         
         <div className="flex justify-between items-center relative z-10">
-          <h1 className="py-2 px-4 sm:px-5 bg-white rounded-full font-medium text-sm sm:text-base">
+          <h1 className="py-2 px-4 sm:px-5 bg-white rounded-full font-medium text-sm sm:text-16">
             {prize}
           </h1>
 
@@ -60,7 +60,7 @@ const ProductCard = ({ prize, text, image }) => {
         >
           <button
             onClick={handleAddToCart}
-            className="bg-[#01C6B5] text-white px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-lg font-medium"
+            className="bg-teal-custom  cursor-pointer text-white px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-lg font-medium"
           >
             Add To Cart
           </button>

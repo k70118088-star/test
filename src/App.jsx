@@ -6,7 +6,7 @@ import Duplicatenumber from "./TestQuestions/Duplicatenumber";
 import Factorial from "./TestQuestions/Factorial";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
-import Cart from "./Landingpage/Cart";
+import Cart from "./components/Landingpage/Cart";
 
 function App() {
   const router = createBrowserRouter([
