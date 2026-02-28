@@ -19,19 +19,19 @@ const Categories = () => {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <button className="font-medium cursor-pointer text-16 md:text-lg text-white py-3 md:py-4 px-6 bg-teal-custom  whitespace-nowrap">
+            <button className="font-medium  hover:bg-teal-600 transition-all duration-300 cursor-pointer text-16 md:text-lg text-white py-3 md:py-4 px-6 bg-teal-custom  whitespace-nowrap">
               View All
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 md:mt-12 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 m-auto lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 md:mt-12 justify-items-center">
           {CategoriesData.map((item) => (
-            <div className="w-full max-w-xs" key={item.id}>
+            <div className="w-full max-w-[309px]" key={item.id}>
               <CategoriesCard
                 image={item.image}
-                title={item.title}
-                price={item.price}
+                text={item.text}
+                prize={item.prize}
               />
             </div>
           ))}

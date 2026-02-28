@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ prize, text, image }) => {
 
@@ -25,12 +26,12 @@ const ProductCard = ({ prize, text, image }) => {
       
       <div className="relative group bg-[#F5F5F5] p-4 sm:p-6 cursor-pointer overflow-hidden">
         
-        <div className="flex justify-between items-center relative z-10">
+        <div className="flex justify-between items-center relative z-22">
           <h1 className="py-2 px-4 sm:px-5 bg-white rounded-full font-medium text-sm sm:text-16">
-            {prize}
+            <span>€</span>{prize}
           </h1>
 
-          <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center cursor-pointer">
+          <div className="w-8 h-8  bg-white rounded-full flex items-center justify-center cursor-pointer">
             <svg
               width="18"
               height="17"
@@ -58,12 +59,14 @@ const ProductCard = ({ prize, text, image }) => {
           className="absolute inset-0 z-20 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 
           flex items-center justify-center"
         >
+          <Link to={"/cart"}>
           <button
             onClick={handleAddToCart}
             className="bg-teal-custom  cursor-pointer text-white px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-lg font-medium"
           >
-            Add To Cart
+          Add To Cart
           </button>
+          </Link>
         </div>
       </div>
 

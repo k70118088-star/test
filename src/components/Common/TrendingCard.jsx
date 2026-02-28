@@ -30,7 +30,7 @@ const TrendingCard = ({ image, title, price }) => {
         </p>
 
         <div className="flex justify-between items-center mt-2.5">
-          <p className="text-xl sm:text-2xl font-bold">{price}</p>
+          <p className="text-xl sm:text-2xl font-bold"><span>€</span>{price}</p>
 
           <div className="flex gap-1 text-xl sm:text-2xl text-yellow-500">
             <span>★★★★</span>

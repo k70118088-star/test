@@ -46,7 +46,7 @@ const Products = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={prevSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition">
+            className="w-12.5 h-12.5 cursor-pointer hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition">
             <svg
               width="9"
               height="15"
@@ -60,7 +60,7 @@ const Products = () => {
           </button>
           <button
             onClick={nextSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5] hover:text-white transition">
+            className="w-12.5 h-12.5  cursor-pointer  hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5] hover:text-white transition">
             <svg
               width="9"
               height="15"

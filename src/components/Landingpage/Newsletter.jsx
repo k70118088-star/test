@@ -2,10 +2,10 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <section className="w-full bg-[#F1F1F1] min-h-113.5 flex items-center">
+    <section className="max-w-360 m-auto bg-[#F1F1F1] min-h-113.5 flex items-center">
       <div className="max-w-360 mx-auto w-full px-6 lg:px-16">
         <div className="flex flex-col lg:flex-row items-center justify-between h-full">
-          <div className="w-full lg:w-1/3 flex items-end justify-center h-full">
+          <div className="w-full lg:w-1/3 lg:block hidden items-end justify-center h-full">
             <img
               src="/assets/img14.png"
               alt="model"
@@ -29,13 +29,13 @@ const Newsletter = () => {
                 placeholder="Email Address"
                 className="flex-1 sm:px-4 px-1 py-3 outline-none text-sm"
               />
-              <button className="bg-[#00C4B4] text-white px-4 sm:px-7.75 py-2.75 text-sm font-medium">
+              <button className="bg-[#00C4B4] hover:bg-teal-600 transition-all duration-300 cursor-pointer text-white px-4 sm:px-7.75 py-2.75 text-sm font-medium">
                 Subscribe
               </button>
             </div>
           </div>
 
-          <div className="w-full lg:w-1/3 flex items-end justify-center h-full">
+          <div className="w-full lg:w-1/3 lg:block hidden items-end justify-center h-full">
             <img
               src="/assets/img15.png"
               alt="bottle"

@@ -72,7 +72,7 @@ const Trending = () => {
           <div className="flex gap-3">
             <button
             onClick={prevSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
+            className="w-12.5 h-12.5 cursor-pointer hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
           >
             <svg
               width="9"
@@ -90,7 +90,7 @@ const Trending = () => {
           </button>
           <button
             onClick={nextSlide}
-            className="w-12.5 h-12.5 hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
+            className="w-12.5 h-12.5 cursor-pointer hover:border-none flex justify-center items-center rounded-full border border-[#414143] hover:bg-[#01c6b5]  hover:text-white transition"
           >
             <svg
               width="9"
@@ -108,7 +108,7 @@ const Trending = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden max-w-285  mt-10">
+        <div className="overflow-hidden max-w-360 mt-10">
           <div
             className={`flex  ${transition ? "transition-transform duration-500 ease-in-out" : ""}`}
             style={{

@@ -13,7 +13,7 @@ const Cart = () => {
     const updated = storedCart.map((item) => ({
       ...item,
       quantity: item.quantity || 1 || 2,
-      price: Number(item.price), 
+      price: Number(item.prize), 
     }));
     setCartItems(updated);
   }, []);
@@ -39,7 +39,7 @@ const Cart = () => {
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, item) => {
-      return total + item.price * item.quantity;
+      return total + item.prize * item.quantity;
     }, 0);
   };
 
@@ -63,7 +63,7 @@ const Cart = () => {
       </div>
 
       {cartItems.map((item, index) => {
-        const total = (item.price * item.quantity).toFixed(2);
+        const total = (item.prize * item.quantity).toFixed(2);
 
         return (
           <div
@@ -75,9 +75,9 @@ const Cart = () => {
                 src={item.image}
                 className="w-20 h-20 object-contain"/>
               <div>
-                <h2 className="font-medium">{item.title}</h2>
+                <h2 className="font-medium">{item.text}</h2>
                 <p className="text-sm text-gray-500">
-                  €{item.price.toFixed(2)}
+                  €{item.prize}
                 </p>
               </div>
             </div>

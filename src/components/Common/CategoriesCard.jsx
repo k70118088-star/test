@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const CategoriesCard = ({ image, title, price }) => {
+const CategoriesCard = ({ image, text, prize }) => {
 
   const handleAddToCart = () => {
     const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
-    const newProduct = { image,  title,  price,};    
+    const newProduct = { image,  text,  prize,};    
     const updatedCart = [...existingCart, newProduct];
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     console.log("Added To Cart:", newProduct);
@@ -13,7 +14,7 @@ const CategoriesCard = ({ image, title, price }) => {
   return (
     <div className="w-66.75 h-75.75 cursor-pointer bg-white hover:shadow-[0_0_51px_rgba(0,0,0,0.08)]">
       <div className="relative group bg-[#EFEFEF] h-62.75 flex items-center justify-center overflow-hidden">
-        <div className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center z-20 cursor-pointer">
+        <div className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center z-21 cursor-pointer">
           <svg
             width="18"
             height="17"
@@ -25,18 +26,19 @@ const CategoriesCard = ({ image, title, price }) => {
               fill="#01C6B5"/>
           </svg>
         </div>
-        <img src={image} alt={title} className="object-contain z-10" />
+        <img src={image}  className="object-contain z-10" />
         <div
           className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center z-20">
-          <button onClick={handleAddToCart} className="bg-teal-custom  cursor-pointer text-white px-8 py-3 text-lg font-medium">
+          <Link to={"/cart"}><button onClick={handleAddToCart} className="bg-teal-custom  cursor-pointer text-white px-8 py-3 text-lg font-medium">
             Add To Cart
           </button>
+          </Link>
         </div>
       </div>
 
       <div className="flex justify-between items-center px-4 py-4">
-        <h2 className=" font-semibold text-base text-[#414143]">{title}</h2>
-        <p className="text-sm font-normal text-black">{price}</p>
+        <h2 className=" font-semibold text-base text-[#414143]">{text}</h2>
+        <p className="text-sm font-normal text-black"><span>€</span>{prize}</p>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Accordions = () => {
         return (
           <div
             key={index}
-            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 border-2 sm:px-6 py-4 flex flex-col 
+            className={`w-full max-w-212.5 lg:w-212.25 transition-all duration-300 border-2 sm:px-6 px-2 py-4 flex flex-col 
               ${
                 isOpen
                   ? "lg:h-33.5 border-[#01C6B5] shadow-[0_0_8.4px_#0000001A]"

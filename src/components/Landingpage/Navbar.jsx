@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-teal-custom  py-4">
+      <div className="bg-teal-custom max-w-360 m-auto  py-4">
         <div className="max-w-285 mx-auto px-4 flex justify-between items-center">
           
           <h1 className="text-white text-lg font-semibold">
@@ -47,9 +47,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-col gap-6 px-6 text-lg">
-          <p className="cursor-pointer">Home</p>
-          <p className="cursor-pointer">Contact</p>
-          <p className="cursor-pointer">Cart</p>
+          <p className="cursor-pointer text-[#01c6b5]">Home</p>
+          <p className="cursor-pointer text-[#01c6b5]">Contact</p>
+          <p className="cursor-pointer text-[#01c6b5]">Cart</p>
         </div>
       </div>
     </>
