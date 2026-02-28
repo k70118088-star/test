@@ -26,7 +26,8 @@ const Slider = () => {
               className="absolute inset-0 z-0"
               style={{background:"linear-gradient(90.64deg, rgba(0,0,0,0.65) 5.47%, rgba(0,0,0,0) 95.31%)"}}/>
 
-            <div className="relative z-20 text-white min-h-[80vh] max-w-149.5 flex flex-col items-start justify-center px-4">
+            <div className="relative z-20 text-white min-h-[80vh] max-w-285 flex  items-center lg:px-14 md:px-8 px-4 ">
+              <div>
               <h1
                 className="text-sm sm:text-16 md:text-2xl leading-[100%] tracking-[18%] font-normal">
                 {Slide.subtitle}
@@ -38,7 +39,7 @@ const Slider = () => {
               </h1>
 
               <h1
-                className="font-normal  mt-4 leading-[160%] sm:text-lg md:text-[20px]">
+                className="font-normal max-w-[595px] mt-4 leading-[160%] sm:text-lg md:text-[20px]">
                 {Slide.description}
               </h1>
 
@@ -46,6 +47,7 @@ const Slider = () => {
                 className="bg-teal-custom  cursor-pointer w-32 sm:w-36 h-12 sm:h-14.25 text-16 sm:text-[20px] font-medium mt-6">
                 Shop now
               </button>
+            </div>
             </div>
           </div>
         ))}
