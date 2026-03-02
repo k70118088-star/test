@@ -7,6 +7,8 @@ import Factorial from "./TestQuestions/Factorial";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Cart from "./components/Landingpage/Cart";
+import Students from "./Students";
+import StudentDetails from "./StudentDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +18,7 @@ function App() {
         <>
           <Home />
         </>
-      )
+      ),
     },
     {
       path: "/cart",
@@ -24,7 +26,7 @@ function App() {
         <>
           <Cart />
         </>
-      )
+      ),
     },
     {
       path: "/variables",
@@ -32,50 +34,53 @@ function App() {
         <>
           <Variables />
         </>
-      )
+      ),
     },
     {
       path: "/datatype",
       element: (
         <>
-        <Datatype />
+          <Datatype />
         </>
-      )
+      ),
     },
     {
       path: "/object",
       element: (
         <>
-        <Object />
+          <Object />
         </>
-      )
+      ),
     },
     {
       path: "/factorial",
       element: (
         <>
-        <Factorial />
+          <Factorial />
         </>
-      )
+      ),
     },
     {
       path: "/duplicatenumber",
       element: (
         <>
-        <Duplicatenumber />
+          <Duplicatenumber />
         </>
-      )
-    }
+      ),
+    },
+    {
+      path: "/student",
+      element: <Students />,
+    },
+    {
+      path: "/student/:id",
+      element: <StudentDetails />,
+    },
   ]);
 
   return (
     <>
       <RouterProvider router={router} />
-
-     
-    
-      
-      
     </>
   );
 }
